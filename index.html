@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Sweet | A sweet way to express emotions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-pale-yellow: #F6D989;
+        --color-olive: #AAB080;
+        --color-moss: #2E4032;
+        --color-golden: #E6B860;
+        --color-cream: #FCF9F2;
+      }
+      body {
+        font-family: 'Golos Text', sans-serif;
+        background-color: var(--color-cream);
+        color: var(--color-moss);
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, .font-alice {
+        font-family: 'Alice', serif;
+      }
+      .brand-pattern {
+        background-image: radial-gradient(var(--color-moss) 0.5px, transparent 0.5px);
+        background-size: 20px 20px;
+        opacity: 0.05;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--color-cream);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-olive);
+        border-radius: 10px;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade {
+        animation: fadeIn 0.8s ease forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
